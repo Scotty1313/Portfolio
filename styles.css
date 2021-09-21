@@ -204,7 +204,7 @@ body, html {
     grid-template-areas: 
     "img-four"
     "text-four"
-    "img-three"
+    "img-three" 
     "text-three"
     "img-one"
     "text-one"
@@ -250,20 +250,12 @@ body, html {
 
 /* Contact Container */
 
-.contact {
+.links{
     display: grid;
-    max-width: 100vw;
     padding-top: 1em;
-    grid-template-columns: 5em 1fr 5em 4fr 2em;
-    grid-template-areas: ". contact . find-text .";
-}
-
-.contact-grid {
-    display: grid;
     padding-bottom: 2em;
-    grid-template-columns: 5.5em 1fr 5em 1fr 1fr 1fr 1fr 2em;
     grid-template-areas: 
-    ". email . git-icon code-icon net-icon link-icon ."
+    "git-icon code-icon net-icon link-icon"
     ;
 }
 
@@ -366,7 +358,7 @@ h5 {
 
 .contact-text {
     font-family: 'Merriweather', serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -460,11 +452,8 @@ i {
         padding-bottom: 2em;
     }
 
-    .contact-grid {
-        grid-template-columns: 5em 1fr 8em 1fr 1fr 1fr 1fr 4em;
-        grid-template-areas: 
-        ". email . git-icon code-icon net-icon link-icon ."
-        ;
+    .contact-text {
+        font-size: 2rem;
     }
 }
 
@@ -513,12 +502,6 @@ i {
         ;   
     }
 
-    .contact-grid {
-        grid-template-columns: 8em 1fr 20em 1fr 1fr 1fr 1fr 15em;
-        grid-template-areas: 
-        ". email . git-icon code-icon net-icon link-icon ."
-        ;
-    }
 }
 
 /* Keyframes for text animation on intro-text */
